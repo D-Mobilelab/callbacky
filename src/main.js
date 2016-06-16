@@ -1,17 +1,47 @@
-/**
- * @ngdoc overview
- * @name main
- *
- * @description
- * I'm the overview of documentation, I'm in docs/main.js file
- *
- * Click on "cat" or "dog" module in navbar
- */
+var Callbacky = new function(){
 
-var dog = require('./dog');
-var cat = require('./cat');
+    var events = [];
+    var logger = { 
+        debug: function(){},
+        log: function(){},
+        info: function(){},
+        warn: function(){},
+        error: function(){}
+    };
 
-module.exports = {
-    dog: dog,
-    cat: cat
+    this.init = function(options){
+        if (options.logger){
+            logger = options.logger;
+        }
+
+        logger.log('Callbacky', 'init', options);
+    };
+
+    this.bind = function(key, callback){
+        if(!events[key]){ 
+            events[key] = [];
+        }
+        events[key].push(callback);
+        logger.log('Callbacky', 'bind', key, callback);
+    };
+
+    this.trigger = function(key, arg){
+        logger.log('Callbacky', 'trigger', key, arg);
+        if(events[key] && events[key].length > 0){
+            for(var i = 0; i < events[key].length; i++){
+                events[key][i].call(this, arg);
+            }
+        }        
+    };
+
+    this.clean = function(key){
+        if(events[key]){
+            events[key] = [];
+        }
+
+        logger.log('Callbacky', 'clean', key);
+    };
+
 };
+
+module.exports = Callbacky;
