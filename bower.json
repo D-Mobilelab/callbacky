@@ -1,0 +1,29 @@
+{
+  "name": "callbacky",
+  "description": "description of callbacky",
+  "main": [
+    "dist/dist.js"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/*",
+    "!dist/**/*",
+    "!src/**/*",
+    "!CHANGELOG",
+    "!README.md",
+    "!bower.json"
+  ],
+  "keywords": [],
+  "authors": [],
+  "homepage": "https://github.com/D-Mobilelab/callbacky",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/D-Mobilelab/callbacky.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "private": false
+}
