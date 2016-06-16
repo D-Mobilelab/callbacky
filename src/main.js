@@ -10,7 +10,7 @@ var Callbacky = new function(){
     };
 
     this.init = function(options){
-        if (options.logger){
+        if (options && options.logger){
             logger = options.logger;
         }
 
@@ -40,6 +40,11 @@ var Callbacky = new function(){
         }
 
         logger.log('Callbacky', 'clean', key);
+    };
+
+    this.cleanAll = function(){
+        events = [];
+        logger.log('Callbacky', 'cleanAll');
     };
 
 };
