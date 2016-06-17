@@ -61,7 +61,7 @@ var Callbacky = new function(){
      * <pre>
      * Callbacky.bind('eventName', function(args){ 
      *     console.log(args)) 
-     * };
+     * });
      *
      * Callbacky.trigger('eventName', 'world');
      * // IT EXECUTES: console.log('world');
@@ -91,7 +91,7 @@ var Callbacky = new function(){
      * <pre>
      * Callbacky.bind('eventName', function(args){ 
      *     console.log(args)) 
-     * };
+     * });
      *
      * Callbacky.trigger('eventName', 'world');
      * // IT EXECUTES: console.log('world');
@@ -123,7 +123,7 @@ var Callbacky = new function(){
      * <pre>
      * Callbacky.bind('eventName', function(args){ 
      *     console.log(args)) 
-     * };
+     * });
      *
      * Callbacky.clean('eventName');
      *
@@ -153,7 +153,7 @@ var Callbacky = new function(){
      * <pre>
      * Callbacky.bind('eventName', function(args){ 
      *     console.log(args)) 
-     * };
+     * });
      *
      * Callbacky.cleanAll();
      *
