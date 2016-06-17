@@ -2,10 +2,22 @@ var Callbacky = require('../src/main');
 
 describe('Callback test -', function () {
 
-	var fakeMethods;
+	var fakeMethods, logger;
 
 	beforeEach(function(){
-		Callbacky.init();
+		logger = {
+			log: function(){},
+			debug: function(){},
+			info: function(){},
+			warn: function(){},
+			error: function(){}
+		};
+		spyOn(logger, 'warn');
+
+		Callbacky.init({
+			logger: logger
+		});
+
 		fakeMethods = {
 			alert: function(value) {},
 			info: function(value) {}
@@ -50,5 +62,17 @@ describe('Callback test -', function () {
 		Callbacky.cleanAll();
 		Callbacky.trigger('methodOne');
 		expect(fakeMethods.alert).not.toHaveBeenCalled();
+	});
+
+	describe('logger -', function(){
+		it('trigger warn if no callbacks is associated to an event', function(){
+			Callbacky.trigger('methodOne');
+			expect(logger.warn).toHaveBeenCalledWith('Callbacky', 'trigger', 'no callback associated with the event methodOne');
+		});
+
+		it('clean warn if no callbacks is associated to an event', function(){
+			Callbacky.clean('methodOne');
+			expect(logger.warn).toHaveBeenCalledWith('Callbacky', 'clean', 'no callback associated with the event methodOne');
+		});	
 	});
 })

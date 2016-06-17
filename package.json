@@ -1,14 +1,23 @@
 {
   "name": "callbacky",
   "version": "1.0.0",
-  "description": "description of callbacky",
-  "keywords": [],
+  "description": "Javascript event handler that allows multiple parts of an application communicate with each other",
+  "keywords": [
+    "event",
+    "eventlistener",
+    "eventmanager",
+    "communication",
+    "javascript"
+  ],
   "homepage": "https://github.com/D-Mobilelab/callbacky",
   "bugs": {
     "url": "https://github.com/D-Mobilelab/callbacky/issues"
   },
   "license": "MIT",
-  "contributors": [],
+  "contributors": [{
+      "name": "Aurelio Merenda",
+      "email": "aurelio.merenda@buongiorno.com"
+  }],
   "repository": {
     "type": "git",
     "url": "git://github.com/D-Mobilelab/callbacky.git"

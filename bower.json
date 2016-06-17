@@ -1,6 +1,6 @@
 {
   "name": "callbacky",
-  "description": "description of callbacky",
+  "description": "Javascript event handler that allows multiple parts of an application communicate with each other",
   "main": [
     "dist/dist.js"
   ],
@@ -16,8 +16,17 @@
     "!README.md",
     "!bower.json"
   ],
-  "keywords": [],
-  "authors": [],
+  "keywords": [
+    "event",
+    "eventlistener",
+    "eventmanager",
+    "communication",
+    "javascript"
+  ],
+  "authors": [{
+      "name": "Aurelio Merenda",
+      "email": "aurelio.merenda@buongiorno.com"
+  }],
   "homepage": "https://github.com/D-Mobilelab/callbacky",
   "repository": {
     "type": "git",
