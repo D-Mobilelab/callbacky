@@ -1,6 +1,6 @@
 {
   "name": "callbacky",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript event handler that allows multiple parts of an application communicate with each other",
   "keywords": [
     "event",
