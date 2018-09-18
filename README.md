@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/D-Mobilelab/callbacky/badge.svg?branch=master&v=1)](https://coveralls.io/github/D-Mobilelab/callbacky?branch=master)
 [![npm version](https://badge.fury.io/js/callbacky.svg)](https://badge.fury.io/js/callbacky)
 [![Bower version](https://badge.fury.io/bo/callbacky.svg)](https://badge.fury.io/bo/callbacky)
-[![GitHub version](https://badge.fury.io/gh/D-Mobilelab%2Fcallbacky.svg?v=1)](https://badge.fury.io/gh/D-Mobilelab%2Fcallbacky)
+[![GitHub version](https://badge.fury.io/gh/D-Mobilelab%2Fcallbacky.svg?v=1)](https://badge.fury.io/gh/D-Mobilelab%2Fcallbacky) [![Greenkeeper badge](https://badges.greenkeeper.io/D-Mobilelab/callbacky.svg)](https://greenkeeper.io/)
 
 Callbacky is a Javascript event handler that allows multiple parts of an application communicate with each other.
 
